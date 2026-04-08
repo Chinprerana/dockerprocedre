@@ -14,7 +14,7 @@ docker run -d -p 8087:80 -v my-volume:/usr/share/nginx/html nginx
 5. Verify Container
 docker ps
 6. Create File in Container
-docker exec -it <container_id> sh
+docker exec -it <container_id> bash
 echo "Hello Persistent Storage!" > /usr/share/nginx/html/index.html
 exit
 7. Check Output
